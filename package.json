@@ -1,0 +1,38 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.1",
+  "private": "true",
+  "description": "A clean, beautiful and responsive personal portfolio website of Agu Ogan Success!",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "predeploy": "rm -rf dist && parcel build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/success619/portfolio-website"
+  },
+  "keywords": [],
+  "author": "Agu Ogan Success",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/success619/portfolio-website/issues"
+  },
+  "homepage": "https://success619.github.io/portfolio-website",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2",
+    "prettier": "^2.8.1"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "gh-pages": "^6.1.1",
+    "jquery": "^3.6.3",
+    "popper.js": "^1.16.1",
+    "vanilla-tilt": "^1.8.0"
+  }
+}
