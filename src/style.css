@@ -18,6 +18,8 @@
     width: 20rem;
     height: 27rem;
     border-radius: 20%;
+    gap: 10px;
+    padding: 10px;
 }
 
 .tech-tilt {
@@ -60,6 +62,7 @@
 .icon-img {
     height: 9rem;
     width: 9rem;
+    border-radius: 999px;
 }
 
 .tech-img {
@@ -68,8 +71,8 @@
 }
 
 .icon-name {
-    font-weight: 700;
-    font-size: large;
+    font-weight: 600;
+    font-size: medium;
 }
 
 @media (min-width:505px) {
@@ -1018,3 +1021,30 @@ li.addf #navListContact.active {
 }
 
 /* sm:px-16 px-6 */
+
+/* Unique class to avoid conflicts */
+.profile-avatar-main {
+  display: block;
+  max-width: 100%; /* Keeps it responsive on mobile */
+  height: auto;
+  border-radius: 50%; /* Makes it a perfect circle */
+  border: 6px solid #ffffff; /* Thick professional border */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Deep, soft shadow for depth */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  object-fit: cover; /* Ensures your face doesn't stretch if the png isn't a perfect square */
+}
+
+/* Subtle "Senior Developer" hover effect */
+.profile-avatar-main:hover {
+  transform: scale(1.03) translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Ensures it doesn't get too massive on desktop */
+@media (min-width: 992px) {
+  .profile-avatar-main {
+    max-width: 450px; 
+  }
+}
+
